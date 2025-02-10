@@ -61,7 +61,7 @@
 
     - Creamos la clase User.java en el paquete edu.eci.cvds.tdd.library.user:
 
-        ![alt text](/Resources/image16.png)
+        ![alt text](/Resources/image20.png)
 
         Verificamos la creació:
 
@@ -70,6 +70,7 @@
     - Creamos la clase Loan.java en el paquete edu.eci.cvds.tdd.library.loan:
 
         ![alt text](/Resources/image15.png)
+        ![alt text](/Resources/image17.png)
 
         Verificamos la creación:
 
@@ -81,8 +82,7 @@
 
     - Creamos la clase Library.java en el paquete edu.eci.cvds.tdd.library:
 
-        ![alt text](/Resources/image20.png)
-        ![alt text](/Resources/image17.png)
+        ![alt text](/Resources/image16.png)
 
         Verificamos la creación:
 
