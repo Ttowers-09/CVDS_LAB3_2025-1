@@ -15,7 +15,7 @@ import java.util.Map;
 public class Library {
 
     private final List<User> users;
-    private final Map<Book, Integer> books;
+    public final Map<Book, Integer> books;
     private final List<Loan> loans;
 
     public Library() {
