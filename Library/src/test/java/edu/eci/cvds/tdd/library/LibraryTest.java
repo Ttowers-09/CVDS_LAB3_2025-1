@@ -18,6 +18,15 @@ public class LibraryTest{
         Book book = new Book("Prueba", "Ivan", "123");
         assertTrue(library.addBook(book));
     }
-    
+
+    @Test
+    public void testAddCorrectAmount(){
+        Library library2 = new Library();
+        Book book2 = new Book("Prueba2", "Camilo", "124");
+        library2.addBook(book2);
+        library2.addBook(book2);
+        assertTrue(library2.books.get(book2)==2);
+    }
+
     
 }
