@@ -110,8 +110,12 @@
 
     ![alt text](image.png)
 
-    Para el metood loanABook:
+    Para el metodo loanABook:
     ![alt text](image-3.png)
+
+    Despues de implementar el método:
+
+    ![alt text](image-4.png)
     
 
 7. **COBERTUTA**
