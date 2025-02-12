@@ -18,7 +18,7 @@ public class Library {
 
     private final List<User> users;
     public final Map<Book, Integer> books;
-    private final List<Loan> loans;
+    final List<Loan> loans;
 
     public Library() {
         users = new ArrayList<>();
@@ -37,19 +37,13 @@ public class Library {
      * @return true if the book was stored false otherwise.
      */
     public boolean addBook(Book book) {
-        try {
-            if(books.containsKey(book)){
-                books.put(book, books.get(book) + 1);
-
-            }else{
-                books.put(book, 1);
-                return true;
-            }
+        if(books.containsKey(book)){
+            books.put(book, books.get(book) + 1);
             return true;
-        } catch (Exception e){
-            return false;
+        }else{
+            books.put(book, 1);
+            return true;
         }
-    
     }
 
     /**
@@ -96,6 +90,7 @@ public class Library {
             Loan loan = new Loan(book,user,  LocalDateTime.now());
             loan.setStatus(LoanStatus.ACTIVE);
             books.put(book, books.get(book) - 1);
+            loans.add(loan);
             return loan;
         }
         return null;
@@ -151,14 +146,19 @@ public class Library {
      * @return the loan with the RETURNED status.
      */
     public Loan returnLoan(Loan loan) {
-        //TODO Implement the login of loan a book to a user based on the UserId and the isbn.
-        return null;
+        if(loan == null){
+            return null;
+        }
+ 
+        Book book = loan.getBook();
+        books.put(book, books.get(book) + 1);
+        loan.setStatus(LoanStatus.RETURNED);
+        loan.setReturnDate(LocalDateTime.now());
+        return loan;
     }
 
     public boolean addUser(User user) {
         return users.add(user);
     }
 
-
-    
 }
