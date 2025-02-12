@@ -126,7 +126,8 @@
 
     - Compilar el proyecto en la carpeta target se debe crear una carpeta con el nombre site la cual tiene un index.html
 
-    (FOTO)
+    ![alt text](image-5.png)
+    
 
     - Al abrir dicho archivo se debe ver la cobertura total y de cada una de las clases, el objetivo es tener la cobertura superior al 80%.
 

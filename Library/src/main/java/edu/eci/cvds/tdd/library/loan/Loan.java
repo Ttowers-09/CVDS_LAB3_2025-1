@@ -5,6 +5,9 @@ import edu.eci.cvds.tdd.library.user.User;
 
 import java.time.LocalDateTime;
 
+
+
+
 public class Loan {
     private Book book;
     private User user;
@@ -19,15 +22,18 @@ public class Loan {
         this.loanDate = loanDate;
         
     }
-
+    
+    
     public Book getBook() {
         return book;
     }
 
+    
     public void setBook(Book book) {
         this.book = book;
     }
 
+    
     public User getUser() {
         return user;
     }
