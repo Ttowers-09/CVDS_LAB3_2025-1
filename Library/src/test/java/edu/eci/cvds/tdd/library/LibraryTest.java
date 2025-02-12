@@ -37,9 +37,12 @@ public class LibraryTest{
         Book book3 = new Book("Prueba2", "Camilo", "124");
         library3.addBook(book3);
         User user = new User("Camilo","12345");
+        library3.addUser(user);
         assertNotNull(library3.loanABook(user.getId(),book3.getIsbn()));
 
     }
+
+    
 
     @Test
     public void testLoanBookNotAvailable(){

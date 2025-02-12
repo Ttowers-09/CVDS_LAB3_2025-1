@@ -8,6 +8,8 @@ import java.util.Map;
 import edu.eci.cvds.tdd.library.book.Book;
 import edu.eci.cvds.tdd.library.loan.Loan;
 import edu.eci.cvds.tdd.library.user.User;
+import edu.eci.cvds.tdd.library.loan.LoanStatus;
+import java.time.LocalDateTime;
 
 /**
  * Library responsible for manage the loans and the users.
@@ -64,9 +66,80 @@ public class Library {
      * @return The new created loan.
      */
     public Loan loanABook(String userId, String isbn) {
-        //TODO Implement the login of loan a book to a user based on the UserId and the isbn.
+        User user = null;
+        for(User u: users){
+            if(u.getId().equals(userId)){
+                user = u;
+            }
+        }
+
+        Book book = null;
+        for(Book b: books.keySet()){
+            if(b.getIsbn().equals(isbn)){
+                book = b;
+            }
+        }
+
+        //Validación de libro disponible
+
+        Boolean disponible,usuario, prestamo;
+        disponible = libroDisponible(isbn);
+        //validación usuario existente
+        usuario = usuarioExistente(userId);
+
+
+        //valicación prestamo doble
+        prestamo = prestamoDoble(user, book);
+
+        //Realizar prestamo 
+        if(disponible == true && usuario == true && prestamo == true){
+            Loan loan = new Loan(book,user,  LocalDateTime.now());
+            loan.setStatus(LoanStatus.ACTIVE);
+            books.put(book, books.get(book) - 1);
+            return loan;
+        }
         return null;
+       
+   
     }
+
+
+    public boolean prestamoDoble(User user, Book book){
+        
+        int count = 0;
+        for(Loan l: loans){
+            if(l.getUser().equals(user) && l.getBook().equals(book)){
+                count ++;
+            
+            }
+        }
+        if(count > 0){
+            return false;
+        }else{
+            return true;
+        }
+        
+    }
+
+    public boolean libroDisponible(String isbn) {
+        for (Book b : books.keySet()) {
+            if (b.getIsbn().equals(isbn) && books.get(b) > 0) {
+                return true; 
+            }
+        }
+        return false; 
+    }
+
+
+    public boolean usuarioExistente(String userId) {
+        for (User b : users) {
+            if (b.getId().equals(userId)) {
+                return true; 
+            }
+        }
+        return false; 
+    }
+
 
     /**
      * This method return a loan, meaning that the amount of books should be increased by 1, the status of the Loan
@@ -86,4 +159,6 @@ public class Library {
         return users.add(user);
     }
 
+
+     
 }
