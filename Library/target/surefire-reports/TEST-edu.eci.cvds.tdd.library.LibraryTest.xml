@@ -1,65 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.eci.cvds.tdd.library.LibraryTest" time="0.189" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.eci.cvds.tdd.library.LibraryTest" time="0.029" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="23"/>
+    <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library\target\test-classes;C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library\target\classes;C:\Users\Milo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Milo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library\target\test-classes;C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library\target\classes;C:\Users\lab\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lab\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lab\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="America/Bogota"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="23"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="CO"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\Milo\AppData\Local\Temp\surefire3765428016968496759\surefirebooter-20250212002204656_3.jar C:\Users\Milo\AppData\Local\Temp\surefire3765428016968496759 2025-02-12T00-22-04_073-jvmRun1 surefire-20250212002204656_1tmp surefire_0-20250212002204656_2tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\lab\AppData\Local\Temp\surefire2101155181154444155\surefirebooter-20250212112044196_3.jar C:\Users\lab\AppData\Local\Temp\surefire2101155181154444155 2025-02-12T11-20-44_106-jvmRun1 surefire-20250212112044196_1tmp surefire_0-20250212112044196_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library\target\test-classes;C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library\target\classes;C:\Users\Milo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Milo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library\target\test-classes;C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library\target\classes;C:\Users\lab\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\lab\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\lab\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Milo"/>
-    <property name="user.language" value="es"/>
+    <property name="user.home" value="C:\Users\lab"/>
+    <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-01-21"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library"/>
+    <property name="basedir" value="C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Milo\AppData\Local\Temp\surefire3765428016968496759\surefirebooter-20250212002204656_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\lab\AppData\Local\Temp\surefire2101155181154444155\surefirebooter-20250212112044196_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="23.0.2+7-58"/>
-    <property name="user.name" value="Milo"/>
-    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
+    <property name="user.name" value="lab"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Milo\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\lab\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\Milo\AppData\Local\Temp\"/>
-    <property name="java.version" value="23.0.2"/>
-    <property name="user.dir" value="C:\Users\Milo\Documents\CVDS\CVDS_LAB3_2025-1\Library"/>
+    <property name="java.io.tmpdir" value="C:\Users\lab\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="C:\Users\lab\Documents\CVDS_LAB3_2025-1\Library"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\workspace\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Milo\AppData\Local\Microsoft\WindowsApps;C:\Users\Milo\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-1.8\bin;C:\Program Files\PuTTY\;C:\Program Files\Maven\apache-maven-3.9.6\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\swipl\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\Gradle\gradle-8.11\bin;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\MongoDBCompass;C:\Program Files\mongosh;C:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;C:\Users\lab\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="java.vm.version" value="17.0.10+11-LTS-240"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="67.0"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddBook" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.015"/>
-  <testcase name="testSuccesfullLoan" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.03"/>
-  <testcase name="testLoanBookNotAvailable" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.001"/>
-  <testcase name="testAddCorrectAmount" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.001"/>
+  <testcase name="testAddBook" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.004"/>
+  <testcase name="testGetNameUser" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testGetLoanDate" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.006"/>
+  <testcase name="testGetBook" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testGetUser" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testSuccesfullLoan" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testUserSetId" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testUserSetName" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testAuthorTittle" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testLoanBookNotAvailable" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testGetTittle" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
+  <testcase name="testAddCorrectAmount" classname="edu.eci.cvds.tdd.library.LibraryTest" time="0.0"/>
 </testsuite>
