@@ -99,7 +99,20 @@
 6. **CREAR CLASE DE PRUEBA**
     - Crear la clase de prueba para edu.eci.cvds.tdd.Library, la clase debe seguir los estándares de nombres estudiados en clase.
 
-    (FOTO)
+    Creamos la clase LibraryTest para realizar los test correspondientes:
+    
+    ![alt text](image-1.png)
+
+    Aplicando la metodología TDD implementamos las pruebas y posteriormente implementamos el metodo addBook de la clase Library:
+
+    ![alt text](image-2.png)
+
+
+    ![alt text](image.png)
+
+    Para el metood loanABook:
+    ![alt text](image-3.png)
+    
 
 7. **COBERTUTA**
     - Agregar la dependencia de jacoco, utilizar la última versión disponible en maven central.

@@ -5,10 +5,13 @@ import edu.eci.cvds.tdd.library.Library;
 import edu.eci.cvds.tdd.library.book.Book;
 import edu.eci.cvds.tdd.library.loan.Loan;
 import edu.eci.cvds.tdd.library.user.User;
+import edu.eci.cvds.tdd.library.loan.LoanStatus;
 
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+import java.time.LocalDateTime;
 
 public class LibraryTest{
 
@@ -28,5 +31,18 @@ public class LibraryTest{
         assertTrue(library2.books.get(book2)==2);
     }
 
+    @Test 
+    public void testSuccesfullLoan(){
+        Library library3 = new Library();
+        Book book3 = new Book("Prueba2", "Camilo", "124");
+        library3.addBook(book3);
+        User user = new User("Camilo","12345");
+        assertNotNull(library3.loanABook(user.getId(),book3.getIsbn()));
+
+    }
+
+
+
+    
     
 }
