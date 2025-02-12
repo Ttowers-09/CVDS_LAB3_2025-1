@@ -41,6 +41,15 @@ public class LibraryTest{
 
     }
 
+    @Test
+    public void testLoanBookNotAvailable(){
+        Library library4 = new Library();
+        Book book4 = new Book("Prueba", "Ivan", "5678");
+        User user = new User("Ivan","897");
+        assertNull(library4.loanABook(user.getId(),book4.getIsbn()));
+    }
+    
+
 
 
     
