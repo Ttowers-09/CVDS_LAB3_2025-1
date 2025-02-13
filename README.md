@@ -101,38 +101,38 @@
 
     Creamos la clase LibraryTest para realizar los test correspondientes:
     
-    ![alt text](image-1.png)
+    ![alt text](/Resources/r/image-1.png)
 
     Aplicando la metodología TDD implementamos las pruebas y posteriormente implementamos el metodo addBook de la clase Library:
 
-    ![alt text](image-2.png)
+    ![alt text](Resources/r/image-2.png)
 
 
-    ![alt text](image.png)
+    ![alt text](Resources/r/image.png)
 
     Para el metodo loanABook:
-    ![alt text](image-3.png)
+    ![alt text](Resources/r/image-3.png)
 
     Despues de implementar el método:
 
-    ![alt text](image-4.png)
+    ![alt text](Resources/r/image-4.png)
     
 
 7. **COBERTUTA**
     - Agregar la dependencia de jacoco, utilizar la última versión disponible en maven central.
 
     - Para usar Jacoco es necesario agregar la siguiente sección en el pom.xml:
-    ![alt text](/Resources/image13.png)
+    ![alt text](Resources/image13.png)
 
     - Compilar el proyecto en la carpeta target se debe crear una carpeta con el nombre site la cual tiene un index.html
 
-    ![alt text](image-5.png)
+    ![alt text](Resources/r/image-5.png)
     
     
 
     - Al abrir dicho archivo se debe ver la cobertura total y de cada una de las clases, el objetivo es tener la cobertura superior al 80%.
 
-    ![alt text](image-6.png)
+    ![alt text](Resources/r/image-6.png)
 
     
 7. **SONARCUBE**
@@ -141,13 +141,19 @@
         
              docker pull sonarqube.
 
+            ![alt text](Resources/r/image-11.png)
+
         - Arrancar el servicio de SonarQube con el siguiente comando:
 
                 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
+                Ademas validamos el funcionamiento con docker ps -a:
         
-        - Validar funcionamiento: 
+            ![alt text](Resources/r/image-12.png)
+
         
-            docker ps -a
+
+
         
         - Iniciar sesión en sonar localhost:9000 cambiar la clave por defecto usuario y contraseña es admin.
 
@@ -157,7 +163,11 @@
 
         - Una vez sonar este corriendo deben generar un token.
 
+        ![alt text](Resources/r/image-10.png)
+
         - Instale sonarLint en el IDE que este manejando.
+
+        ![alt text](Resources/r/image-9.png)
 
         - Añada el plugin de Sonar en el archivo pom del proyecto.
 
@@ -168,9 +178,10 @@
             ![alt text](/Resources/image19.png)
         
         - Construya el proyecto, genere el reporte de JACOCO y corrija el cubrimiento de las pruebas de unidad para que su proyecto se construya adecuadamente.
+        ![alt text](Resources/r/image-8.png)
+        - genere la integración con sonar mvn verify sonar:sonar -D sonar.token=squ_0e0a731fe188a6441ff74fd9cbcdda406859b620.
 
-        - genere la integración con sonar mvn verify sonar:sonar -D sonar.token=[TOKEN_GENERADO].
-
+            ![alt text](Resources/r/image-7.png)
 
 
 
