@@ -128,10 +128,12 @@
 
     ![alt text](image-5.png)
     
+    
 
     - Al abrir dicho archivo se debe ver la cobertura total y de cada una de las clases, el objetivo es tener la cobertura superior al 80%.
 
-    (FOTO)
+    ![alt text](image-6.png)
+
     
 7. **SONARCUBE**
     - Necesitamos tener Docker.

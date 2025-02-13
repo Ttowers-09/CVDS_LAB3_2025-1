@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class LibraryTest{
 
     private Library library;
-    private Book book, book2;
+    private Book book, book2, book3;
     private User user, user2;
 
     /**
@@ -24,6 +24,7 @@ public class LibraryTest{
         library = new Library();
         book = new Book("Prueba", "Ivan", "123");
         book2 = new Book("Prueba2", "Camilo", "124");
+        book3 = new Book("Prueba3","usuario","1");
         user = new User("Camilo","12345");
         user2 = new User("Ivan","007");
         library.addBook(book);
@@ -65,7 +66,6 @@ public class LibraryTest{
         assertNull(library.loanABook(user2.getId(),book2.getIsbn()));
     }
 
-    //TEST METODO FALTANTE
      /**
      * This test tests the method which return a book
      */
@@ -216,4 +216,29 @@ public class LibraryTest{
         assertNull(library.returnLoan(null));
     }
 
+
+    /*
+     * This test verifies that the book returned on the loan is the correct one.
+     */
+    @Test
+    public void testBookReturnedIsCorrect(){
+        library.addBook(book2);
+        library.loanABook(user.getId(), book2.getIsbn());
+        Loan loan = library.loans.get(0);
+        Loan returnedLoan = library.returnLoan(loan);
+        assertEquals(returnedLoan.getBook(),book2);
+    }
+
+    
+    /*
+     * This test verifies that user that returned the book on the loan is the correct one.
+     */
+    @Test
+    public void testBookUserthatReturnedBookIsCorrect(){
+        library.addBook(book3);
+        library.loanABook(user.getId(), book3.getIsbn());
+        Loan loan = library.loans.get(0);
+        Loan returnedLoan = library.returnLoan(loan);
+        assertEquals(returnedLoan.getUser(),user);
+    }
 }
